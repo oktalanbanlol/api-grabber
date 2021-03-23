@@ -1,0 +1,15 @@
+name: 'API Grabber'
+description: 'Grabs API, parses it, and writes the parsed data to json files at a specified location.'
+branding:
+  icon: 'bar-chart'
+  color: 'yellow'
+inputs:
+  options:
+    description: 'The json file at which options are stored'
+    default: 'options.json'
+outputs:
+  success:
+    description: 'Whether or not all operations were successful, true or false.'
+runs:
+  using: 'node12'
+  main: 'index.js'
